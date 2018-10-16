@@ -16,7 +16,7 @@ body{
 
  ul{
 	margin: 0;
-	padding: 0;
+	padding:0;
 }
 
 table, th, td {
@@ -189,14 +189,14 @@ form {
 .delete-btn {
   width: 18px;
   height: 17px;
-  background: url(&quot;delete-icn.svg&quot;) no-repeat center;
+  background: url('ui\img\love.png'); no-repeat center;
 }
 
 .like-btn {
   position: absolute;
   top: 9px;
   left: 15px;
-  background: url('twitter-heart.png');
+  background: url('ui\img\plus.png');
   width: 60px;
   height: 60px;
   background-size: 2900%;
@@ -291,11 +291,92 @@ footer{
 	padding:20px;
 	margin-top:20px;
 	color:#ffffff;
-	background-color:#08491d;
+	background-color:#f16272;
 	text-align: center;
 }
 
 .flex-container {
   display: flex;
   flex-direction: column;
+}
+.container{
+  margin:0;
+  padding:0;
+
+}
+#main{
+  background-color:#fafafa;
+  margin:25px;
+ width:100%;
+}
+h1,h2{
+  color:#800000;
+
+}
+label{
+  padding:24px 10px;
+  margin:24px;
+}
+input{
+  width : 150px;
+  margin: 0;
+}
+input[type=text] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the clear button */
+.clearbtn {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+/* Float clear and save buttons and add an equal width */
+.clearbtn, .savebtn {
+  float: left;
+  width:20%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for clear button and save button on extra small screens */
+@media screen and (max-width: 300px) {
+  .clearbtn, .savebtn {
+    width: 100%;
+  }
 }
