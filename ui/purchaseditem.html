@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+  <script src="store-manager\purchase.js"></script>
 <header>
     <div class="container"
 <div id="branding">
@@ -32,32 +33,59 @@
      	</ul>
 	</nav>
 	</section>
+  <body>
+	<div id="wrapper">
+		<div class="row">
+			<h1>PURCHASE ITEM</h1>
+		</div>
+		<div class="row">
+			<div class="sm12">
+				<input type="text" id="item" class="form-control" placeholder="Item Name">
+			</div>
+		</div>
+		<div class="row">
+			<div class="sm12">
+				<input type="text" id="qty" class="form-control" placeholder="Item Quantity">
+			</div>
+		</div>
+		<div class="row">
+			<div class="sm12">
+				<input type="text" id="price" class="form-control" placeholder="Item Price">
+			</div>
+		</div>
+		<div class="row">
+			<div class="sm6">
+				<button type="button" id="addItem">Add Item</button>
+			</div>
+			<div class="sm6">
+				<button type="button" id="reset">Reset</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="sm12" id="result">
+				<h3>Result</h3>
+				<table>
+					<thead>
+						<tr>
+							<th>S/N</th>
+							<th>Item</th>
+							<th>Quantity</th>
+							<th>Price</th>
+						</tr>
+					</thead>
+					<tbody id="table-body">
 
-	<div>
-    <h2> Purchase Item</h2>
-     <table style="width:100%" id="t2">
-      <tr id="first-tr">
-        <th>s/n</th>
-        <th>Item</th>
-        <th>Quantity</th>
-        <th>Quantity Available</th>
-        <th>Price</th>
-      </tr>
-      <tr id="second-tr">
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-      <tr id="total-tr">
-        <td>Total</td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
+					</tbody>
+					<tfoot>
+						<tr>
+							<th colspan="3" align="center">Total</th>
+							<th id="sum">0</th>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		</div>
+	</div>
 
 </body>
 </html>
