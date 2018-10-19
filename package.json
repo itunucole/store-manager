@@ -1,0 +1,26 @@
+{
+  "name": "store-manager",
+  "version": "1.0.0",
+  "description": "This is for my boot camp project \r the store manager application help store admins...",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "api": "node ./src/index.js"
+  },
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/itunucole/store-manager.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/itunucole/store-manager/issues"
+  },
+  "homepage": "https://github.com/itunucole/store-manager#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  }
+}

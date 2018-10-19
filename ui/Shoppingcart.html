@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
+
 <header>
     <div class="container"
 <div id="branding">
@@ -32,101 +33,62 @@
      	</ul>
 	</nav>
 	</section>
-	<div class="shopping-cart">
-  <!-- Title -->
-  <div class="title">
-    Shopping cart
-  </div>
+  <div class="container">
 
-  <!-- Product #1 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
+        <!-- SHOPPING CART -->
+        <main class="shopping">
+            <!-- NEW ITEM -->
+            <div class="new-item">
+                <h1 class="new-item__text">New Item</h1>
+
+                <form action="#" id="new" class="new-item__form">
+                    <div class="new-item__form-group">
+                        <label for="name" class="new-item__label">Item Name</label>
+                        <input type="text" class="new-item__name" id="name" required>
+                    </div>
+
+                    <div class="new-item__price-qty">
+                    <div class="new-item__form-group">
+                        <label for="price" class="new-item__label">Price</label>
+                        <input type="number" min="1" class="new-item__price" id="price" required>
+                    </div>
+
+                    <div class="new-item__form-group">
+                        <label for="qty" class="new-item__label">Qty</label>
+                        <input type="number" min="1" class="new-item__qty" id="qty" required>
+                    </div>
+                </div>
+
+                    <div class="new-item__form-group-btn">
+                        <button type="submit" class="btn-add-new">Add TO CART</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- CART-->
+            <div class="cart">
+
+                <!-- Summary -->
+                <section class="cart-summary">
+                    <h1 class="cart-summary__text">
+                        <span class="cart-summary__total-items-count">0</span> items in cart
+                    </h1>
+                    <h1 class="cart-summary__total-cost">0</h1>
+                </section>
+
+                <!-- List -->
+                <section class="cart-items"></section>
+
+
+                <!-- Checkout -->
+                <section class="checkout">
+                    <a href="#name" class="btn-continue">Add New</a>
+                    <button type="button" class="btn-clear-cart">Clear Cart</button>
+                </section>
+
+            </div>
+        </main>
     </div>
-
-    <div class="image">
-      <img src="grey_tote.png" alt="" />
-    </div>
-
-    <div class="description">
-      <span>Grey tote bag</span>
-      <span>Gucci</span>
-      <span>Grey</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="love.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-    </div>
-
-    <div class="total-price">#200,000</div>
-  </div>
-
-  <!-- Product #2 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
-
-    <div class="image">
-      <img src="item-2.png" alt=""/>
-    </div>
-
-    <div class="description">
-      <span>Hermes 1989</span>
-      <span>Hermès/span>
-      <span>Brown</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="love.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-    </div>
-
-    <div class="total-price">#500,000</div>
-  </div>
-
-  <!-- Product #3 -->
-  <div class="item">
-    <div class="buttons">
-      <span class="delete-btn"></span>
-      <span class="like-btn"></span>
-    </div>
-
-    <div class="image">
-      <img src="item-3.png" alt="" />
-    </div>
-
-    <div class="description">
-      <span>Pink tote bag</span>
-      <span>West Nine</span>
-      <span>pink</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">
-        <img src="love.svg" alt="" />
-      </button>
-      <input type="text" name="name" value="1">
-      <button class="minus-btn" type="button" name="button">
-        <img src="plus.svg" alt="" />
-      </button>
-    </div>
-
-    <div class="total-price">$200,000</div>
-  </div>
 </div>
 </body>
 </html>
